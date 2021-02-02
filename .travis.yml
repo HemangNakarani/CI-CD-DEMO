@@ -8,5 +8,7 @@ deploy:
   api_key:
     secure: $HEROKU_API_KEY
   app: experimental-ci-cd
+  on:
+    branch: main
 before_install:
   - chmod +x mvnw
