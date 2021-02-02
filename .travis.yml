@@ -3,5 +3,4 @@ jdk:
   - openjdk15
 script:
   - ./mvnw clean install
-before_install:
-  - chmod +x mvnw
+  - ./mvnw heroku:deploy jib:build -P deploy-heroku
