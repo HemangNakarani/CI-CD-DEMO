@@ -4,3 +4,5 @@ jdk:
 script:
   - ./mvnw clean install
   - ./mvnw heroku:deploy jib:build -P deploy-heroku
+before_install:
+  - chmod +x mvnw
