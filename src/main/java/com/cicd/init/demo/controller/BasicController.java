@@ -7,8 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class BasicController {
 
     @GetMapping("/hi")
-    public String Hello()
+    public String Hi()
     {
         return "<h1>Hello Peeeeeps !!!!</h1>";
+    }
+
+
+    @GetMapping("/")
+    public String Hello()
+    {
+        return "<h1>The Fuckin' Pipline Done !!!</h1>";
     }
 }
